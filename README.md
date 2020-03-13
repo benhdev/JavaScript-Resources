@@ -12,6 +12,24 @@ A set of javascript functions created by me and other useful resources
 > Promise based HTTP client for the browser and node.js  
 > `npm install axios --save`
 
+> [discord.js](https://discord.js.org/)  
+> Discord API framework
+> `npm install discord.js --save`
+```js
+const Discord = require('discord.js');
+const Client = new Discord.Client();
+
+Client.on('ready', function() {
+    console.log('The bot is ready');
+});
+
+Client.on('message', function(Message) {
+    console.log('Someone sent a message');
+});
+
+Client.login('CLIENT_TOKEN');
+```
+
 > [express](http://expressjs.com/)  
 > Node.js web application framework  
 > `npm install express --save`
