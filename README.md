@@ -13,8 +13,8 @@ A set of javascript functions created by me and other useful resources
 > `npm install axios --save`
 
 > [discord.js](https://discord.js.org/)  
-> Discord API framework
-> `npm install discord.js --save`
+> Discord API framework  
+> `npm install discord.js --save`  
 ```js
 const Discord = require('discord.js');
 const Client = new Discord.Client();
