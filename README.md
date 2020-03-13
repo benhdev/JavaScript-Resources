@@ -1,4 +1,4 @@
-## JavaScript-Functions
+## JavaScript Resources
 A set of javascript functions created by me and other useful resources
 
 ### Created by me
