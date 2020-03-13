@@ -8,8 +8,17 @@ A set of javascript functions created by me and other useful resources
 - [MaximumSubstring](MaximumSubstring.js)
 
 ### Useful resources
-- [axios](https://www.npmjs.com/package/axios)
-- [express](http://expressjs.com/)
-- [mysql](https://www.npmjs.com/package/mysql)
-- [nodemailer](https://nodemailer.com/about/)
-- [pm2](https://pm2.keymetrics.io/)
+> [axios](https://www.npmjs.com/package/axios)  
+> Promise based HTTP client for the browser and node.js
+
+> [express](http://expressjs.com/)  
+> Node.js web application framework
+
+> [mysql](https://www.npmjs.com/package/mysql)  
+> MySQL driver for node.js
+
+> [nodemailer](https://nodemailer.com/about/)  
+> Email sender
+
+> [pm2](https://pm2.keymetrics.io/)  
+> Process manager for node.js
