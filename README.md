@@ -18,7 +18,7 @@ A set of javascript functions created by me and other useful resources
 > MySQL driver for node.js
 
 > [nodemailer](https://nodemailer.com/about/)  
-> Email sender
+> Email sender - [Setting up with G Suite OAuth2](https://medium.com/@imre_7961/nodemailer-with-g-suite-oauth2-4c86049f778a)
 
 > [pm2](https://pm2.keymetrics.io/)  
 > Process manager for node.js
