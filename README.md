@@ -54,4 +54,8 @@ app.listen(80);
 
 > [pm2](https://pm2.keymetrics.io/)  
 > Process manager for node.js  
-> `npm install pm2 -g`
+> `npm install pm2 -g`  
+> `pm2 start app.js --name main-process`  
+> `pm2 logs main-process`  
+> `pm2 restart main-process`  
+> `pm2 stop main-process`  
