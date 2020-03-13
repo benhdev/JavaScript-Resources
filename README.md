@@ -10,7 +10,7 @@ A set of javascript functions created by me and other useful resources
 ### Useful resources
 > [axios](https://www.npmjs.com/package/axios)  
 > Promise based HTTP client for the browser and node.js  
-> `npm install axios --save`
+> `npm install axios --save`  
 
 > [discord.js](https://discord.js.org/)  
 > Discord API framework  
