@@ -72,11 +72,57 @@ app.listen(80);
 
 > [mysql](https://www.npmjs.com/package/mysql)  
 > MySQL driver for node.js  
-> `npm install mysql --save`
+> `npm install mysql --save`  
+```js
+const mysql = require('mysql');
+const key = require('./key.json');
+
+const database = mysql.createConnection({
+    host: key.host,
+    user: key.user,
+    password: key.password,
+    database: key.database
+});
+
+database.connect();
+
+database.query('SELECT 1 + 1 AS Solution', function(error, results, fields) {
+    if(error) throw error;
+
+    let Result = results[0];
+    console.log(`The solution is: ${Result.Solution}`);
+});
+
+database.end();
+```
 
 > [nodemailer](https://nodemailer.com/about/)  
 > Email sender - [Setting up with G Suite OAuth2](https://medium.com/@imre_7961/nodemailer-with-g-suite-oauth2-4c86049f778a)  
-> `npm install nodemailer --save`
+> `npm install nodemailer --save`  
+```js
+const nodemailer = require('nodemailer');
+const key = require('./key.json');
+
+const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+        type: 'OAuth2',
+        user: 'from@example.com',
+        serviceClient: key.client_id,
+        privateKey: key.private_key
+    }
+});
+
+transporter.sendMail({
+    from: 'from@example.com',
+    to: 'to@example.com',
+    subject: 'Test Email',
+    html: '<h1>hello</h1>',
+    text: 'hello'
+});
+```
 
 > [pm2](https://pm2.keymetrics.io/)  
 > Process manager for node.js  
