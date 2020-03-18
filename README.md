@@ -11,6 +11,32 @@ A set of javascript functions created by me and other useful resources
 > [axios](https://www.npmjs.com/package/axios)  
 > Promise based HTTP client for the browser and node.js  
 > `npm install axios --save`  
+```js
+const axios = require('axios');
+
+async function sendRequest() {
+    let Result = await axios.get('http://api.open-notify.org/iss-now.json');
+
+    if(!Result) {
+        return console.log('No result');
+    }
+
+    let Data = Result.data;
+
+    if(!Data) {
+        return console.log('No data');
+    }
+
+    if(Data.message !== 'success') {
+        return console.log('Error');
+    }
+
+    console.log('The International Space Station is currently at:');
+    console.log(`${Data.iss_position.latitude}, ${Data.iss_position.longitude}`);
+}
+
+sendRequest();
+```
 
 > [discord.js](https://discord.js.org/)  
 > Discord API framework  
